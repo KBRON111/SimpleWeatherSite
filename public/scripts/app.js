@@ -1,5 +1,3 @@
-console.log('client side js file loaded');
-
 fetchForecast = (location, callback) => {
     return fetch(`http://localhost:3000/weather?address=${encodeURIComponent(location)}`).then((response) => {
         response.json().then((data) => {
