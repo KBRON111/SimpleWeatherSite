@@ -1,5 +1,5 @@
 fetchForecast = (location, callback) => {
-    return fetch(`http://localhost:3000/weather?address=${encodeURIComponent(location)}`).then((response) => {
+    return fetch(`/weather?address=${encodeURIComponent(location)}`).then((response) => {
         response.json().then((data) => {
             callback(data);
         });
